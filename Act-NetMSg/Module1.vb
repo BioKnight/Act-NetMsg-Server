@@ -9,8 +9,15 @@ Module Server
     Private udp_Listener As UdpClient
     Private done As Boolean = False
 
+    Private Declare Auto Function ShowWindow Lib "user32.dll" (ByVal hWnd As IntPtr, ByVal nCmdShow As Integer) As Boolean
+    Private Declare Auto Function GetConsoleWindow Lib "kernel32.dll" () As IntPtr
+    Private Const SW_HIDE As Integer = 0
+
 
     Sub Main()
+        Dim hWndConsole As IntPtr
+        hWndConsole = GetConsoleWindow()
+        ShowWindow(hWndConsole, SW_HIDE)
         start_Listener()
 
     End Sub

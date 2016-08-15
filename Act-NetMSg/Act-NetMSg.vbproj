@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8CE26380-664F-4305-95A5-D44C11E3DDE7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Act_NetMSg.Module1</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>Act_NetMSg</RootNamespace>
     <AssemblyName>Act-NetMSg</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -45,6 +45,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Scafer31000-Bubble-Circle-2-Message.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -104,6 +107,13 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Blackvariant-Button-Ui-System-Apps-Messages-2.ico" />
+    <Content Include="Grafikartes-Flat-Retro-Modern-Messages.ico" />
+    <Content Include="Hamzasaleem-Stock-Messages.ico" />
+    <Content Include="Martz90-Circle-Messages.ico" />
+    <Content Include="Scafer31000-Bubble-Circle-2-Message.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
